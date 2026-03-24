@@ -34,7 +34,7 @@ public:
     // Throw std::invalid_argument if value < -273.15
     explicit Temperature(double celsius) {
         // TODO: Validate and set celsius_
-        if ( celsius < -273.5 ) {
+        if ( celsius < -273.15 ) {
             throw invalid_argument("Temperature cannot be below absolute zero.");
     }
     celsius_ = celsius;
